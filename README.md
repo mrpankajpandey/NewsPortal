@@ -16,7 +16,7 @@ Follow these steps to set up your PHP news website locally using XAMPP:
 
 Use the command line to import your database:
 ```bash
- mysql -u root -p your_database_name < C:/xampp/htdocs/your-news-website/database/newsapp.spl
+ mysql -u root -p newsapp < C:/xampp/htdocs/your-news-website/database/newsapp.spl
 ```
 ## 4. Access Website:
 
