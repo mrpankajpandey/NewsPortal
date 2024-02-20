@@ -9,14 +9,14 @@ Follow these steps to set up your PHP news website locally using XAMPP:
 
 ## 2. Database Setup:
 
-Open http://localhost/phpmyadmin in your browser.
-Create a new database named <b> newsapp </b> for your website.
+    Open http://localhost/phpmyadmin in your browser.
+    Create a new database named <b> newsapp </b> for your website.
 
 ## 3. import Database:
 
 Use the command line to import your database:
-```bash mysql -u root -p your_database_name < C:/xampp/htdocs/your-news-website/database/newsapp.spl
-
+```bash
+ mysql -u root -p your_database_name < C:/xampp/htdocs/your-news-website/database/newsapp.spl
 ```
 ## 4. Access Website:
 
