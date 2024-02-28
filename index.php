@@ -8,7 +8,7 @@ include('include/navbar.php');
 <div id="main-content" style=" margin-top:100px" ;>
     <div class="container">
         <div class="row">
-        <?php include("message.php"); ?>
+            <?php include("message.php"); ?>
             <div class="col-md-8">
                 <!-- post-container -->
                 <div class="post-container">

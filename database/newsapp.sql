@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 31, 2023 at 04:11 PM
+-- Generation Time: Feb 28, 2024 at 04:29 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -59,6 +59,13 @@ CREATE TABLE `post` (
   `author` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `post`
+--
+
+INSERT INTO `post` (`id`, `title`, `description`, `category`, `date`, `image`, `author`) VALUES
+(5, 'Web develeopment ', ' Basics Testing ', '2', '28 Feb, 2024', 'Thumbnail.png', 3);
+
 -- --------------------------------------------------------
 
 --
@@ -67,7 +74,7 @@ CREATE TABLE `post` (
 
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
-  `name` varchar(191) NOT NULL,
+  `username` varchar(191) NOT NULL,
   `email` varchar(191) NOT NULL,
   `password` varchar(191) NOT NULL,
   `role` tinyint(11) NOT NULL DEFAULT 0
@@ -77,7 +84,7 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `password`, `role`) VALUES
+INSERT INTO `users` (`id`, `username`, `email`, `password`, `role`) VALUES
 (1, 'aman', 'test@gmail.com', 'wqdefr', 0),
 (3, 'pankaj pandey', 'pankaj@gmail.com', 'pankaj123', 1),
 (4, 'Akhasy', 'akshay44@gmail.com', 'akshay', 0);
@@ -118,7 +125,7 @@ ALTER TABLE `category`
 -- AUTO_INCREMENT for table `post`
 --
 ALTER TABLE `post`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `users`
